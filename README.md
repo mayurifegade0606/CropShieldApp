@@ -1,4 +1,4 @@
-## CropShield - Crop Disease Detection Android App
+## CropShield - Crop Disease Detection and Monitoring System Using Machine Learning
 
 ## Overview
 **CropShield** is an Android application that helps farmers and agricultural users detect crop diseases through image analysis. Users can either upload or capture an image of a crop leaf using their mobile device. The image is then processed by a machine learning model hosted on a Flask backend. The app provides disease prediction and basic remedies using a React.js-based frontend integrated into the Android app.
@@ -12,14 +12,13 @@
 
 ## Tech Stack
 - Android (Mobile App)
-- Frontend: React.js (PWA or embedded WebView in Android)
+- Frontend: React.js 
 - Backend: Python, Flask
 - Machine Learning: TensorFlow, Keras (Python)
-- Others: OpenCV, NumPy, Android Studio, Axios (for API calls)
 
 ## How It Works
 1. User uploads or captures a crop leaf image in the Android app.
-2. Image is sent to the Flask backend via REST API.
+2. Image is sent to the Flask backend.
 3. Backend preprocesses the image and sends it to a CNN model.
 4. The model returns the predicted disease name.
 5. App displays the result with basic info and remedies.
@@ -29,7 +28,7 @@
 ### Backend Setup
 ```bash
 # Clone the repository
-git clone https://github.com/SrujanChavan/CropShield.git
+git clone https://github.com/mayurifegade0606/CropShield.git
 cd CropShield/backend
 
 # Set up virtual environment
